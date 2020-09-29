@@ -1,19 +1,24 @@
-import '../styles/index.css'
+import 'root/styles/index.css'
 import '@/lib/select.js'
-import lazim from 'lazim'
+import { bind, update } from 'lazim'
 import app from '@/app.js'
 import router from '@/router.js'
 import { fetchCart } from '@/lib/cart.js'
 
 /**
- * store binding fn
- */
-const images = lazim()
-
-/**
  * bind on page load
  */
-images()
+bind()
+
+router.on('after', () => {
+  app.unmount()
+  app.mount()
+
+  /**
+   * bind new images
+   */
+  update()
+})
 
 router.on('after', () => {
   app.unmount()

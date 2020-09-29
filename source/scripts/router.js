@@ -18,9 +18,9 @@ const router = operator('#root', [
   })
 ])
 
-router.on('after', ({ title, pathname }) => {
-  document.title = title
-  window.history.pushState({}, '', pathname)
+router.on('after', ({ previousDocument, location }) => {
+  document.title = previousDocument.title
+  window.history.pushState({}, '', location)
 })
 
 export default router

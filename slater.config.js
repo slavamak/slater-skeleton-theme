@@ -1,9 +1,13 @@
 const path = require('path')
 
 module.exports = {
-  in: '/source',
-  alias: {
-    components: './source/scripts/components'
+  in: path.resolve(__dirname, 'source'),
+  out: path.resolve(__dirname, 'build'),
+  assets: {
+    in: path.resolve(__dirname, 'source/scripts/index.js'),
+    alias: {
+      'root': path.resolve(__dirname)
+    }
   },
   themes: {
     development: {
