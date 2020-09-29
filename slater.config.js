@@ -4,10 +4,7 @@ module.exports = {
   in: path.resolve(__dirname, 'source'),
   out: path.resolve(__dirname, 'build'),
   assets: {
-    in: path.resolve(__dirname, 'source/scripts/index.js'),
-    alias: {
-      'root': path.resolve(__dirname)
-    }
+    in: path.resolve(__dirname, 'source/scripts/index.js')
   },
   themes: {
     development: {

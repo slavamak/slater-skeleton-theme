@@ -1,4 +1,4 @@
-import 'root/styles/index.css'
+import '../styles/index.css'
 import '@/lib/select.js'
 import { bind, update } from 'lazim'
 import app from '@/app.js'
