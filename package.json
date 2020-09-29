@@ -1,0 +1,31 @@
+{
+  "name": "slater-skeleton-theme",
+  "version": "1.0.0",
+  "description": "Slater skeleton theme",
+  "scripts": {
+    "start": "slater watch",
+    "build": "slater build",
+    "deploy:development": "slater build && slater sync",
+    "deploy:production": "slater build && slater sync --theme production",
+    "test:start": "slater watch --config test.config.js",
+    "test:build": "slater build --config test.config.js",
+    "test:deploy": "slater build --config test.config.js && slater sync --config test.config.js",
+    "test:deploy:production": "slater build --config test.config.js && slater sync --theme production --config test.config.js"
+  },
+  "author": "slavamak",
+  "license": "MIT",
+  "homepage": "https://github.com/slavamak/slater-skeleton-theme#readme",
+  "devDependencies": {
+    "slater": "^1.8.0"
+  },
+  "dependencies": {
+    "choozy": "0.0.6",
+    "lazim": "^2.0.1",
+    "mitt": "^2.1.0",
+    "operator": "^1.7.0",
+    "picoapp": "^3.6.2",
+    "sliced": "^1.0.1",
+    "soobstrate": "^1.0.3",
+    "unfetch": "^4.1.0"
+  }
+}
