@@ -1,6 +1,6 @@
 {
   "name": "slater-skeleton-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slater skeleton theme",
   "scripts": {
     "start": "slater watch",
